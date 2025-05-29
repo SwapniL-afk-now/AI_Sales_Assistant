@@ -33,47 +33,49 @@ The AI Sales Assistant is a Python-based application designed to simulate voice-
     *   Receives audio from the server and plays it back to the user.
     *   Displays transcripts and system messages.
 
-## 3. Directory Structure\
+## 3. Directory Structure
+
+    ```text
     AI_SALES_ASSISTANT/
-├── app/ # Main application module
-│ ├── api/ # API endpoint definitions
-│ │ └── v1/
-│ │ ├── init.py
-│ │ └── endpoints/
-│ │ ├── init.py
-│ │ └── call_router.py # Router for call-related endpoints
-│ ├── core/ # Core logic, configuration, conversation management
-│ │ ├── init.py
-│ │ ├── config.py # Application settings, environment variables
-│ │ └── conversation_manager.py # Manages call sessions and LLM interaction
-│ ├── models/ # Pydantic models for API requests/responses (data shapes)
-│ │ ├── init.py
-│ │ └── call_models.py
-│ ├── prompts/ # LLM prompt templates and formatting
-│ │ ├── init.py
-│ │ └── sales_prompts.py
-│ ├── schemas/ # Pydantic models for internal data structures (e.g., conversation state)
-│ │ ├── init.py
-│ │ └── conversation.py
-│ ├── services/ # External service integrations (LLM, STT, TTS)
-│ │ ├── init.py
-│ │ ├── llm_service.py
-│ │ ├── stt_service.py
-│ │ └── tts_service.py
-│ ├── init.py
-│ └── main.py # FastAPI application entry point
-├── docs/ # Project documentation (like this file)
-│ ├── api_documentation.md
-│ ├── architecture.md
-│ └── model_selection_justification.md
-├── test_scripts/ # (Optional) Test scripts
-├── .env.example # Example environment variables
-├── .gitattributes
-├── .gitignore
-├── interactive_voice_chat.py # (Likely an older or alternative client script)
-├── README.md
-├── requirements.txt # Python dependencies
-└── websocket_voice_client.py # Interactive WebSocket client for voice chat
+    ├── app/                      # Main application module
+    │   ├── api/                  # API endpoint definitions
+    │   │   └── v1/
+    │   │       ├── __init__.py
+    │   │       └── endpoints/
+    │   │           ├── __init__.py
+    │   │           └── call_router.py  # Router for call-related endpoints
+    │   ├── core/                 # Core logic, configuration, conversation management
+    │   │   ├── __init__.py
+    │   │   ├── config.py         # Application settings, environment variables
+    │   │   └── conversation_manager.py # Manages call sessions and LLM interaction
+    │   ├── models/               # Pydantic models for API requests/responses (data shapes)
+    │   │   ├── __init__.py
+    │   │   └── call_models.py
+    │   ├── prompts/              # LLM prompt templates and formatting
+    │   │   ├── __init__.py
+    │   │   └── sales_prompts.py
+    │   ├── schemas/              # Pydantic models for internal data structures (e.g., conversation state)
+    │   │   ├── __init__.py
+    │   │   └── conversation.py
+    │   ├── services/             # External service integrations (LLM, STT, TTS)
+    │   │   ├── __init__.py
+    │   │   ├── llm_service.py
+    │   │   ├── stt_service.py
+    │   │   └── tts_service.py
+    │   ├── __init__.py
+    │   └── main.py               # FastAPI application entry point
+    ├── docs/                     # Project documentation (like this file)
+    │   ├── api_documentation.md
+    │   ├── architecture.md
+    │   └── model_selection_justification.md
+    ├── test_scripts/             # (Optional) Test scripts
+    ├── .env.example              # Example environment variables
+    ├── .gitattributes
+    ├── .gitignore
+    ├── interactive_voice_chat.py # (Likely an older or alternative client script)
+    ├── README.md
+    ├── requirements.txt          # Python dependencies
+    └── websocket_voice_client.py # Interactive WebSocket client for voice chat
 
 
 *   `app/api/`: Contains API routing logic, separating different versions or concerns. `call_router.py` defines all sales call related endpoints.
