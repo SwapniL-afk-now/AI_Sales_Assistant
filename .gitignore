@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.env
+venv/
+.vscode/
+*.log
+
+# IDE
+.idea/
+
+# STT Temporary files
+*.wav
+

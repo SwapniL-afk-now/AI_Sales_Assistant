@@ -1,0 +1,61 @@
+# fastapi
+# uvicorn[standard] # Includes websockets and other goodies
+# torch
+# torchaudio
+# torchvision
+# transformers
+# accelerate
+# bitsandbytes # Optional for 8-bit loading on GPU
+# langchain
+# langchain_community
+# sentencepiece
+# soundfile
+# datasets
+# pydub
+# librosa
+# webrtcvad
+# sounddevice # For local audio I/O
+# python-dotenv # For managing environment variables (optional here)
+# requests # For the client simulator
+# pkg_resources
+# aiofiles
+
+
+
+
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings # For BaseSettings
+python-dotenv
+loguru
+
+# LangChain and Hugging Face for LLM
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+langgraph
+
+
+# TTS
+pyttsx3
+
+# STT
+# openai-whisper provides the whisper CLI and Python module
+# For Windows, you might need to install torch separately first if issues arise:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 (for CUDA 11.8, adjust as needed)
+# pip install torch torchvision torchaudio (for CPU)
+openai-whisper
+# ffmpeg is a system dependency for Whisper. Install it via your system's package manager.
+# e.g., sudo apt update && sudo apt install ffmpeg (Linux)
+# brew install ffmpeg (macOS)
+# choco install ffmpeg (Windows with Chocolatey)
+numpy # Often a dependency for audio processing
+soundfile
+sounddevice 
+python-multipart
+websockets 
+pyaudio
+bitsandbytes
+accelerate
