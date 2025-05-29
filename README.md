@@ -16,7 +16,7 @@ A Python-based AI Voice Sales Agent using FastAPI, LangChain, and local LLMs (Qw
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [URL_OF_YOUR_REPOSITORY] # Replace with your repo URL
+    git clone [\[URL_OF_YOUR_REPOSITORY\]](https://github.com/SwapniL-afk-now/AI_Sales_Assistant.git) # Replace with your repo URL
     cd AI_VOICE_CLIENT-MAIN
     ```
 
@@ -52,7 +52,7 @@ A Python-based AI Voice Sales Agent using FastAPI, LangChain, and local LLMs (Qw
 
 ## Running the Application
 
-1.  **Start the FastAPI Server:**
+1.  **Start the FastAPI Server on one terminal:**
     ```bash
     # Ensure virtual environment is activated
     uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
@@ -60,7 +60,7 @@ A Python-based AI Voice Sales Agent using FastAPI, LangChain, and local LLMs (Qw
     *   Server: `http://localhost:8000`
     *   API Docs: `http://localhost:8000/docs`
 
-2.  **Run a Client (Example: WebSocket Client):**
+2.  **Run a Client (Example: WebSocket Client) on a second terminal:**
     ```bash
     # In a new terminal, activate venv
     python websocket_voice_client.py
