@@ -16,7 +16,7 @@ A Python-based AI Voice Sales Agent using FastAPI, LangChain, and local LLMs (Qw
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/SwapniL-afk-now/AI_Sales_Assistant.git # Replace with your repo URL
+    git clone https://github.com/SwapniL-afk-now/AI_Sales_Assistant.git 
     cd AI_VOICE_CLIENT-MAIN
     ```
 
