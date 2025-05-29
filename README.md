@@ -24,45 +24,48 @@ This project implements an AI-powered Voice Sales Agent capable of making simula
 ## Project Structure
 
 
-AI_VOICE_CLIENT-MAIN/
-├── app/
-│ ├── api/
-│ │ └── v1/
-│ │ └── endpoints/
-│ │ └── call_router.py
-│ ├── core/
-│ │ ├── config.py
-│ │ ├── conversation_manager.py
-│ │ └── rag_setup.py (Present if RAG was added, can be omitted if not)
-│ ├── models/ (Pydantic models for API)
-│ │ └── call_models.py
-│ ├── prompts/
-│ │ └── sales_prompts.py
-│ ├── schemas/ (Pydantic schemas for data structures)
-│ │ └── conversation.py
-│ └── services/
-│ ├── init.py
-│ ├── llm_service.py # Uses Hugging Face Transformers
-│ ├── stt_service.py
-│ └── tts_service.py
-├── .huggingface_cache_project/ (Local cache for Hugging Face models)
-├── test_scripts/ # Folder for test scripts
-│ ├── init.py
-│ ├── test_config.py
-│ ├── test_llm_service.py
-│ ├── test_stt_service.py
-│ ├── test_tts_service.py
-│ ├── test_conversation_manager_with_real_llm.py
-│ └── test_http_endpoints.py
-├── venv/ (Python virtual environment)
-├── .env
-├── .env.example
-├── .gitignore
-├── interactive_voice_chat.py (CLI for local voice interaction)
-├── websocket_voice_client.py (CLI for WebSocket based voice interaction)
-├── main.py (FastAPI application entry point)
-├── requirements.txt
-└── README.md
+    AI_VOICE_CLIENT-MAIN/
+    ├── app/
+    │ ├── api/
+    │ │ └── v1/
+    │ │ └── endpoints/
+    │ │ └── call_router.py
+    │ ├── core/
+    │ │ ├── config.py
+    │ │ ├── conversation_manager.py
+    │ │ └── rag_setup.py (Present if RAG was added, can be omitted if not)
+    │ ├── models/ (Pydantic models for API)
+    │ │ └── call_models.py
+    │ ├── prompts/
+    │ │ └── sales_prompts.py
+    │ ├── schemas/ (Pydantic schemas for data structures)
+    │ │ └── conversation.py
+    │ └── services/
+    │ ├── init.py # As listed in your structure
+    │ ├── llm_service.py # Uses Hugging Face Transformers
+    │ ├── stt_service.py
+    │ └── tts_service.py
+    ├── .huggingface_cache_project/ (Local cache for Hugging Face models)
+    │ └── ... # Contents of cache, gitignored
+    ├── test_scripts/ # Folder for test scripts
+    │ ├── init.py # As listed in your structure
+    │ ├── test_config.py
+    │ ├── test_llm_service.py
+    │ ├── test_stt_service.py
+    │ ├── test_tts_service.py
+    │ ├── test_conversation_manager_with_real_llm.py
+    │ └── test_http_endpoints.py
+    ├── venv/ (Python virtual environment)
+    │ └── ... # Contents of virtual environment, gitignored
+    ├── .env
+    ├── .env.example
+    ├── .gitignore
+    ├── interactive_voice_chat.py (CLI for local voice interaction)
+    ├── websocket_voice_client.py (CLI for WebSocket based voice interaction)
+    ├── main.py (FastAPI application entry point)
+    ├── requirements.txt
+    └── README.md
+
 
 
 ## Technical Stack
