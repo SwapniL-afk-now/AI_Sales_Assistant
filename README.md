@@ -99,18 +99,19 @@ This project implements an AI-powered Voice Sales Agent capable of making simula
     git clone [URL_OF_YOUR_REPOSITORY] # Replace [URL_OF_YOUR_REPOSITORY] with your actual repo URL
     cd AI_VOICE_CLIENT-MAIN
 
-### 3.Set Up Python Virtual Environment
-    It's highly recommended to use a virtual environment to manage project dependencies.
+### 3. Set Up Python Virtual Environment
 
-    # Create a virtual environment (e.g., named 'venv')
-    python -m venv venv
+It's highly recommended to use a virtual environment to manage project dependencies.
 
-    # Activate the virtual environment
-    # Windows:
-    venv\Scripts\activate
-    # macOS/Linux:
-    source venv/bin/activate
+```bash
+# Create a virtual environment (e.g., named 'venv')
+python -m venv venv
 
+# Activate the virtual environment
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
 
 4. Install Dependencies
 Create a requirements.txt file in your project root with the following content:
